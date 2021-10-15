@@ -1,6 +1,13 @@
 from random import randint
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
+MIN_START_NUMBER = -100
+MAX_START_NUMBER = 100
+START_STEP = 1
+END_STEP = 100
+MAX_NUMBER = 100
+MIN_LENGTH = 5
+MAX_LENGTH = 10
 
 
 def get_progression(start, step, length):
@@ -12,9 +19,9 @@ def get_progression(start, step, length):
 
 
 def generate_round():
-    start = randint(-100, 100)
-    step = randint(1, 100)
-    length = randint(5, 10)
+    start = randint(MIN_START_NUMBER, MAX_START_NUMBER)
+    step = randint(START_STEP, END_STEP)
+    length = randint(MIN_LENGTH, MAX_LENGTH)
 
     progression = get_progression(start, step, length)
 

@@ -2,6 +2,8 @@ from random import randint, choice
 
 DESCRIPTION = 'What is the result of the expression?'
 OPERATORS = ('+', '-', '*')
+MIN_NUMBER = 0
+MAX_NUMBER = 100
 
 
 def calculate(num1, num2, operator):
@@ -14,8 +16,8 @@ def calculate(num1, num2, operator):
 
 
 def generate_round():
-    num1 = randint(0, 100)
-    num2 = randint(0, 100)
+    num1 = randint(MIN_NUMBER, MAX_NUMBER)
+    num2 = randint(MIN_NUMBER, MAX_NUMBER)
     operator = choice(OPERATORS)
     question = '{} {} {}'.format(num1, operator, num2)
     answer = str(calculate(num1, num2, operator))

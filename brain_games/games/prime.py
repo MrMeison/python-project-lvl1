@@ -1,6 +1,8 @@
 from random import randint
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+MIN_NUMBER = 0
+MAX_NUMBER = 100
 
 
 def is_prime(num):
@@ -15,7 +17,7 @@ def is_prime(num):
 
 
 def generate_round():
-    num = randint(0, 100)
+    num = randint(MIN_NUMBER, MAX_NUMBER)
 
     answer = 'yes' if is_prime(num) else 'no'
 
