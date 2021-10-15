@@ -3,6 +3,7 @@ from random import randint, choice
 DESCRIPTION = 'What is the result of the expression?'
 OPERATORS = ('+', '-', '*')
 
+
 def calculate(num1, num2, operator):
     if operator == '+':
         return num1 + num2
@@ -10,6 +11,7 @@ def calculate(num1, num2, operator):
         return num1 - num2
     elif operator == '*':
         return num1 * num2
+
 
 def generate_round():
     num1 = randint(0, 100)

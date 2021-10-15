@@ -1,12 +1,14 @@
-from random import randint, choice
+from random import randint
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
+
 
 def gcd(a, b):
     if b == 0:
         return a
 
     return gcd(b, a % b)
+
 
 def generate_round():
     num1 = randint(0, 100)

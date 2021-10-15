@@ -1,6 +1,7 @@
-from random import randint, choice
+from random import randint
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
+
 
 def get_progression(start, step, length):
     items = []
@@ -8,6 +9,7 @@ def get_progression(start, step, length):
         items.append(start + i * step)
 
     return items
+
 
 def generate_round():
     start = randint(-100, 100)
